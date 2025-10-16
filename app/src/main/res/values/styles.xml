@@ -1,0 +1,27 @@
+<resources>
+    <!-- 基础应用主题 -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:paddingHorizontal">@dimen/button_padding_horizontal</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="elevation">2dp</item>
+        <item name="rippleColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppButton.Secondary" parent="AppButton">
+        <item name="backgroundTint">@android:color/darker_gray</item>
+        <item name="rippleColor">@android:color/gray</item>
+    </style>
+</resources>
