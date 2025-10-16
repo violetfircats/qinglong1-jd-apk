@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.ql.QLLoginActivity">
+    android:padding="@dimen/layout_padding">
 
-    <EditText
-        android:id="@+id/ql_url"
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="@string/prompt_url"
-        android:inputType="textUri"
-        android:selectAllOnFocus="true" />
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding"
+        tools:context=".ui.ql.QLLoginActivity">
 
-    <EditText
-        android:id="@+id/ql_cid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="@string/prompt_cid"
-        android:inputType="text"
-        android:selectAllOnFocus="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_qing_long_login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
 
-    <EditText
-        android:id="@+id/ql_csk"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="@string/prompt_csk"
-        android:inputType="text"
-        android:selectAllOnFocus="true" />
+        <EditText
+            android:id="@+id/ql_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_spacing"
+            android:hint="@string/prompt_url"
+            android:inputType="textUri"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edittext_padding"
+            android:background="@drawable/edittext_bg"
+            android:minHeight="@dimen/edittext_min_height"/>
 
+        <EditText
+            android:id="@+id/ql_cid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_spacing"
+            android:hint="@string/prompt_cid"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edittext_padding"
+            android:background="@drawable/edittext_bg"
+            android:minHeight="@dimen/edittext_min_height"/>
 
+        <EditText
+            android:id="@+id/ql_csk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_spacing"
+            android:hint="@string/prompt_csk"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edittext_padding"
+            android:background="@drawable/edittext_bg"
+            android:minHeight="@dimen/edittext_min_height"/>
 
+        <Button
+            android:id="@+id/ql_login"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/action_ql_login" />
 
-
-    <Button
-        android:id="@+id/ql_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="64dp"
-        android:text="@string/action_ql_login" />
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
