@@ -2,20 +2,10 @@
     <string name="app_name">青龙京东Cookie工具</string>
     <string name="action_clear_webview">清除Cookie</string>
     <string name="qinglong_setting">青龙设置</string>
-    <string name="action_upload">上传</string>
+    <string name="action_upload">上传Cookie</string>
     <string name="title_activity_qing_long_login">青龙登录</string>
-    <string name="ql_ak_name">青龙ClientID</string>
-    <string name="ql_sk_name">青龙ClientSecret</string>
-    <string name="prompt_url">地址,如 http://127.0.0.1:5700</string>
-    <string name="prompt_cid">ClientID</string>
-    <string name="prompt_csk">ClientSecret</string>
+    <string name="prompt_url">青龙地址</string>
+    <string name="prompt_cid">Client ID</string>
+    <string name="prompt_csk">Client Secret</string>
     <string name="action_ql_login">登录</string>
-    <string name="invalid_url">无效的URL</string>
-    <string name="invalid_cid">无效的ClientID</string>
-    <string name="invalid_csk">无效的ClientSecret</string>
-    <string name="login_failed">"登录失败"</string>
-    <string name="title_activity_qing_long_login">登录青龙</string>
-
-
-    <string name="action_clear_webview">刷新</string>
 </resources>
